@@ -401,7 +401,6 @@ module.exports = TrackballControls = function ( object, domElement ) {
 		if ( _this.enabled === false ) return;
 
 		event.preventDefault();
-		event.stopPropagation();
 
 		if ( _state === STATE.NONE ) {
 
@@ -438,7 +437,6 @@ module.exports = TrackballControls = function ( object, domElement ) {
 		if ( _this.enabled === false ) return;
 
 		event.preventDefault();
-		event.stopPropagation();
 
 		if ( _state === STATE.ROTATE && ! _this.noRotate ) {
 
@@ -462,7 +460,6 @@ module.exports = TrackballControls = function ( object, domElement ) {
 		if ( _this.enabled === false ) return;
 
 		event.preventDefault();
-		event.stopPropagation();
 
 		_state = STATE.NONE;
 
@@ -477,7 +474,6 @@ module.exports = TrackballControls = function ( object, domElement ) {
 		if ( _this.enabled === false ) return;
 
 		event.preventDefault();
-		event.stopPropagation();
 
 		var delta = 0;
 
@@ -539,7 +535,6 @@ module.exports = TrackballControls = function ( object, domElement ) {
 		if ( _this.enabled === false ) return;
 
 		event.preventDefault();
-		event.stopPropagation();
 
 		switch ( event.touches.length ) {
 
